@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/modern-business.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/bootstrap.js"></script>
+    
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body style="height:auto">
+    @section IndexSec{
+        <form class="navbar-form navbar-left pull-right" action="/Home/Search" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" name="search" placeholder="search" />
+            </div>
+            <button type="submit" class="btn btn-success">Search</button>
+        </form>
+    }
+    <div>
+        <div class="Container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section>
+                        <h1 class="page-header" style="font-family:'Felix Titling'">
+                            Textillion OwnerShip
+                            <small>We are the best in Garments all over the world</small>
+                        </h1>
+                        <p style="font-size:medium ; font-family:'Felix Titling'"> Textillion has been established since <b>1990</b> and it has been spread all over the world. We provide best Garments including Pants, Jeanz, Casuals, 3-Piece and many more to our customers.  </p>
+                        <p style="font-size:medium ; font-family:'Felix Titling'"> Textillion has been established since <b>1990</b> and it has been spread all over the world. We provide best Garments including Pants, Jeanz, Casuals, 3-Piece and many more to our customers.  </p>
+                        <p style="font-size:medium ; font-family:'Felix Titling'"> Textillion has been established since <b>1990</b> and it has been spread all over the world. We provide best Garments including Pants, Jeanz, Casuals, 3-Piece and many more to our customers.  </p>
+                        <p style="font-size:medium ; font-family:'Felix Titling'"> Textillion has been established since <b>1990</b> and it has been spread all over the world. We provide best Garments including Pants, Jeanz, Casuals, 3-Piece and many more to our customers.  </p>
+                        <p style="font-size:medium ; font-family:'Felix Titling'"> Textillion has been established since <b>1990</b> and it has been spread all over the world. We provide best Garments including Pants, Jeanz, Casuals, 3-Piece and many more to our customers.  </p>
+                        <p style="font-size:medium ; font-family:'Felix Titling'"> Textillion has been established since <b>1990</b> and it has been spread all over the world. We provide best Garments including Pants, Jeanz, Casuals, 3-Piece and many more to our customers.  </p>
+                        <p style="font-size:medium ; font-family:'Felix Titling'"> Textillion has been established since <b>1990</b> and it has been spread all over the world. We provide best Garments including Pants, Jeanz, Casuals, 3-Piece and many more to our customers.  </p>
+
+                    
+                     </section>
+
+
+                </div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-md-4 portfolio-item">
+
+                    <img class="img" src="~/Content/images/About/@ViewBag.AboutImage1" height=" 420" width="260" alt="">
+                    <h1> Owner: @ViewBag.AboutName1 </h1>
+                    <p><b>Qualification</b> : @ViewBag.AboutQualific1 </p>
+                    <p> <b>Experience</b>: @ViewBag.AboutExperience1 </p>
+
+                </div>
+
+                <div class="col-md-4 portfolio-item">
+
+                    <img class="img-responsive" src="~/Content/images/About/@ViewBag.AboutImage2" height="420" width="260" alt="">
+
+                    <h1> Admin: @ViewBag.AboutName2 </h1>
+                    <p><b>Qualification </b>: @ViewBag.AboutQualific2 </p>
+                    <p><b> Experience </b>: @ViewBag.AboutExperience2 </p>
+                </div>
+            </div>
+        </div>
+        <p><b>Textillion </b> brand is the new brand in Pakistan that is of International level. Our goal is to provide best selection of garments that every wants to be wear. </p>
+    </div>
+</body>
+</html>

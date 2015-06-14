@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c74a12f24f3841bd8f4f49d2edbcd4cf" Name="Diagram1">
+        <EntityTypeShape EntityType="LogInModel.LogIn" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogInModel.Galery" Width="1.5" PointX="6.875" PointY="4.125" />
+        <EntityTypeShape EntityType="LogInModel.Cart" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="LogInModel.About" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LogInModel.Item" Width="1.5" PointX="3.375" PointY="0.75" />
+        <AssociationConnector Association="LogInModel.FK_Cart_ToItem" />
+        <AssociationConnector Association="LogInModel.FK_Cart_ToLogIn" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

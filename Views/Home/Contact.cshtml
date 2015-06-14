@@ -1,0 +1,133 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/modern-business.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/bootstrap.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+</head>
+<body style="font-size:15px ">
+
+
+    <section id="main" style="height: 850px; background: url(/Content/images/FinBack.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+        @section IndexSec{
+            <form class="navbar-form navbar-left pull-right" action="/Home/Search" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="search" placeholder="search" />
+                </div>
+                <button type="submit" class="btn btn-success">Search</button>
+            </form>
+        }
+        <div class="col-md-8 colu mn">
+
+            <div class="col-md-12 contentbox">
+                <h3>Contact Us</h3>
+                <p></p>
+                <p style="text-align: justify;">
+                    <a href="http://p2p.wrox.com" rel="nofollow" target="_blank">&nbsp;</a>We are serving with the best products in market for 25 years and no claim is reported. Anyhow, for suggestions and complaints you can contact us or send your feedback. 
+
+               </p>
+                <div id="address">
+                   <br>
+                        
+                       
+                            <address>
+                               
+                                <strong>Telephone:</strong><br>
+                                <strong>Cell Phone:</strong><br>
+                                <strong>Email:</strong> mahmad00888@gmail.com
+                            </address>
+                            <div class="extra-wrap">
+                                <h4>Address: </h4>
+                                <p>44-45 Larex Coloney, Sher Shah Road Data Nagar, Badami Bagh, Lahore</p>
+                            </div>
+                       
+                        <br>
+                    </div>
+
+
+
+                <p><strong>You can also use the given form to give us your precious feedback below.<br> <br> Please Enter Your following Information:</strong></p>
+
+                <div>
+                    <section>
+                        <div class="col-lg-6" style="margin-top:30px; margin-left:450px; background-color:chocolate ; width:400px; height:450px; border-radius:10px;">
+                            <div class="container" style="font-family:Calibri ; color:blue; margin-top:20px; margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-offset-0 col-md-3">
+                                        <div class="form-login">
+
+                                            <form method="post" action="/Home/Contact2" style="opacity:0.9">
+                                                <input type="email" style="opacity:0.9" name="Email" class="form-control input-sm chat-input" placeholder="Enter your Email" required="required" />
+                                                <br />
+
+                                                <input type="text" name="Subject" class="form-control input-sm chat-input" placeholder="Subject" />
+                                                <br />
+
+                                                <textarea name="Feedback" class="form-control input-sm chat-input" placeholder="FeedBack Here"></textarea>
+                                                <br />
+
+                                                <label>Brochure File</label>
+                                                <input type="file" name="file" id="pdffile" />
+
+                                                <!--D<div class="input-append">
+                                <input type="text" name="subfile" style="visibility:hidden;" id="subfile" class="input-xlarge">
+                                <a class="btn" onclick="$('#pdffile').click();">Browse</a>
+                            </div>
+                                -->
+                                                <br />
+                                                <!--
+                            <div style="position:relative;">
+                                <a class='btn btn-primary' href='javascript:;'>
+                                    Choose File...
+                                    <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(pacity=0)";opacity:0;background-color:black; color:transparent;' name="file_source" size="3" onchange='$("#upload-file-info").html($(this).val());'>
+                                </a>
+                                &nbsp;
+                                <span class='label label-info' id="upload-file-info"></span>
+                            </div>
+                            <br />
+                            -->
+                                                <input class="btn btn-primary" type="submit" value="Send" />
+                                                <h3>@ViewBag.Done</h3>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                         
+</section>
+                    <section>
+                <p></p>
+
+                <iframe src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Al+Karam+High+School,+Badami+Bagh+Flyover,+Lahore,+Punjab,+Pakistan&amp;aq=0&amp;oq=al-karam+high+school+la&amp;sll=37.0625,-95.677068&amp;sspn=39.320439,86.572266&amp;ie=UTF8&amp;hq=Al+Karam+High+School,&amp;hnear=Badami+Bagh+Flyover,+Lahore,+Lahore+District,+Punjab,+Pakistan&amp;ll=31.598963,74.316982&amp;spn=0.010344,0.021136&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=9213644657882027551&amp;output=embed" height="250" width="325" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                </section>
+                        <br><br>
+                    </div>
+                <p><strong>Mailing Address:</strong></p>
+
+                <p style="font-style:italic; color:red;">pearlajmal@gmail.com</p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    </body>
+</html>

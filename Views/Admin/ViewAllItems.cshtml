@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewAllItems</title>
+</head>
+<body style="font-size:large">
+    <header><h1 style="font-family:'Felix Titling'"> View All Items </h1></header>
+    <div class="col-lg-9">
+        <br>
+        <table class="table" style="border:solid; margin-top:20px;">
+            <thead>
+                <tr class="btn-primary" style="text-align:center ; font-size:20px">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Image Source</th>
+                   
+
+                </tr>
+            </thead>
+
+            @foreach (ProjectPhase1.Models.Item obj in Model)
+            {
+                <tr >
+                    <td style="font-size:10px">@obj.ItemId"</td>
+                    <td style="font-size:10px">@obj.Name</td>
+                    <td style="font-size:10px">@obj.Quantity</td>
+                    <td style="font-size:10px">@obj.Quantity</td>
+                    <td style="font-size:10px">@obj.Price</td>
+                    <td style="font-size:10px">@obj.Category</td>
+                    <td style="font-size:10px">@obj.ImgFile</td>
+                 
+                </tr>
+            }
+            
+        </table>
+    </div>
+
+
+</body>
+</html>

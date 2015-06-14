@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+@model ProjectPhase1.Models.Item
+<html>
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/modern-business.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/bootstrap.js"></script>
+
+
+    <meta name="viewport" content="width=device-width" />
+    <title>WishList</title>
+</head>
+<body>
+    <div>
+
+        @section IndexSec{
+            <form class="navbar-form navbar-left pull-right" action="/Home/Search" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="search" placeholder="search" />
+                </div>
+                <button type="submit" class="btn btn-success">Search</button>
+            </form>
+        }
+
+        <div class="col-sm-3 text-center">
+            <div class="text-center">
+                <img src="~/images/@(Model.Name).jpg" width="200" height="200" />
+                <h4> Name : @Model.Name</h4>
+                <h4> Price : @Model.Price</h4>
+                @* <h6>
+                    Quantity:
+                    <span><input type="text" name="quantity" value="@Model.Quantity" /></span>
+                </h6>*@
+                <h4> <a href="/Item/ConfirmList?id=@Model.ItemId" class="btn btn-default">add</a></h4>
+            </div>
+        </div>
+
+
+        @*<li></li>
+            <li><input type="hidden" value="@Model.Id" /></li>
+
+            <li><h5>@Model.Description</h5></li>
+            <li><h5></h5></li>
+            Quantity:
+            <li><input type="text" name="quantity" value="@Model.Quantity" /></li>
+            <li><input value="Add to cart" type="submit" /> > </li>
+        </ul>*@
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>

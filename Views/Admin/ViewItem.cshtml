@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Add Item</title>
+</head>
+<body>
+    <div>
+
+        @model ProjectPhase1.Models.Item
+
+
+        <h2>@Model.ItemId</h2>
+        <h2>@Model.Name</h2>
+        <h2>@Model.Quantity</h2>
+        <h2>@Model.Price</h2>
+        <h2>@Model.Category</h2>
+        <h2>@Model.ImgFile</h2>
+         <br />
+
+        <br />
+
+
+    </div>
+</body>
+</html>

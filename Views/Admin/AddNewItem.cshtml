@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/css/layout.css" type="text/css" media="screen" />
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/modern-business.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddUser</title>
+</head>
+<body>
+    <section id="main" style="height:auto; background: url(/Content/images/FinBack.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+        <header><h1 style="font-family:'Felix Titling'"> Add New Item </h1></header>
+        <div>
+
+            <form id="loginform"  role="form" enctype="multipart/form-data" action="/Admin/AddNew2" method="post"  style=" align-content:flex-start;font-size:large; color:black">
+
+               <p style="font-family:'Felix Titling'"> Name : </p><input type="text" style="font-size: large; opacity: 0.9" name="Name"  placeholder="Item Name" required="required" />
+                <br />
+                <br>
+
+                <p style="font-family:'Felix Titling'"> Quantity :</p> <input type="text" style="font-size: large; opacity: 0.9" name="Quantity" placeholder="Quantity" required="required" />
+                    <br />
+                    <br>
+
+                <p style="font-family:'Felix Titling'"> Price : </p><input type="text" name="Price" style="font-size: large" placeholder="Price" required="required" />
+                    <br />
+                    <br>
+                <p style="font-family:'Felix Titling'">
+                    Category:  </p><select name="Category">
+                        <option value="1" selected>Jeanz</option>
+                        <option value="2">Baby T-Shirts</option>
+                        <option value="3">Men T-Shirts</option>
+                        <option value="4">Casuals</option>
+                        <option value="5">Sweater</option>
+
+                    </select>
+                <p style="font-family:'Felix Titling'">
+                    Source File :  </p>  <input type="file" name="ImgFile" style="font-size: large" placeholder="chose file" required="required" />
+                    <br />
+                @*<input type="file" name="ImgFile-2" style="font-size: large" placeholder="chose file" required="required" />
+                <br />
+                <input type="file" name="ImgFile-3" style="font-size: large" placeholder="chose file" required="required" />
+                <br />
+                <input type="file" name="ImgFile-4" style="font-size: large" placeholder="chose file" required="required" />
+                <br />*@
+                    <br>
+
+                    <input type="submit" style="font-size: medium" value=" add item" />
+</form>
+
+            <h3>@ViewBag.Message</h3>
+        </div>
+    </section>
+</body>
+</html>

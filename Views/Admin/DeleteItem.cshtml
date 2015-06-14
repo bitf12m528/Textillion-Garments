@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Delete Item";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/css/layout.css" type="text/css" media="screen" />
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/modern-business.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete Item</title>
+</head>
+
+
+<body>
+    <header><h1 style="font-family:'Felix Titling'"> Delete An Item </h1></header>
+    <div class="col-lg-9">
+        <table class="table" style="border:solid; margin-top:20px;">
+            <thead>
+                <tr class="btn-primary" style="text-align:center">
+                   
+                   
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Image Source</th>
+                 
+                    <th>Delete</th>
+                   
+                </tr>
+            </thead>
+
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    
+                        <td>@obj.Name</td>
+                        <td>@obj.Quantity</td>
+                        <td>@obj.Price</td>
+                        <td>@obj.Category</td>
+                        <td>@obj.ImgFile</td>
+                      
+                    <td><a href="/Admin/DeleteItem2/@obj.ItemId">Delete</a></td>
+                        
+                    </tr>
+                }
+        </table>
+    </div>
+
+</body>
+</html>
