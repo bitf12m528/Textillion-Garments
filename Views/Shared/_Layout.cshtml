@@ -44,10 +44,16 @@
                 
                 }
                 @if (Session["Name"] != null)
-                { 
-                    <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("LogOut", "Logout", "Home")</li>
+                { if (Session["Name"] == "admin")
+                      {
+                        <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("LogOut", "Logout", "Home")</li>
+                        <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Login As: " +(string)@Session["Name"] , "Admin", "Home")</li>
+                      }
+                    else
+                    {
+                        <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("LogOut", "Logout", "Home")</li>
                     <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Login As: " +(string)@Session["Name"] , "Index", "Home")</li>
-                
+                     }
                 }
 
 
