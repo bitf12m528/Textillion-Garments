@@ -21,35 +21,58 @@
 
 </head>
 
-<body>
-    
-    <div class="col-lg-6" style="margin-top:150px; margin-left:370px; background-color:lightblue; width:300px; height:200px; border-radius:10px;">
-        <div class="container" style="font-family:Constantia; color:blue; margin-top:auto; margin-left:auto;">
-            <div class="row">
-                <div class="col-md-offset-0 col-md-3">
-                    <div class="form-login">
+<body >
+    <section id="main" style=" background: url(/Content/images/FinBack.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
 
-                       
-                        <form action="/Home/AfterLogin">
+        <div class="col-lg-6" style="margin-top:150px; margin-left:370px; background-color:transparent; width:500px; height:400px; border-radius:10px;">
+            <div class="container" style="font-family:Constantia; color:blue; margin-top:auto; margin-left:auto;">
+                <div class="row">
+                    <div class="col-md-offset-0 col-md-3">
+                        <div class="form-login">
+
+
+
+
+                            <form role="form" style="margin-left:-280px;margin-right:200px" id="signin" action="/Home/AfterLogin">
+                                <div class=" form-group">
+                                    <label>Username</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user fa-lg fa-fw"></i></span>
+                                        <input required="" type="text" class="form-control" name="Name" id="SUserName" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-unlock fa-lg fa-fw"></i></span>
+                                        <input required="" type="password" class="form-control" name="Password" id="SPassword" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <div class="alert alert-danger" id="signinError" style="display: none;">
+                                    <strong>Invalid &nbsp; </strong> Username or Password.
+                                </div>
+                                <button type="submit" class="btn btn-success" style="width:49%"><i id="signinicon"></i>&nbsp; Sign in</button>
+                                <a href="/Home/SignUp"><button type="button" class="btn btn-default" style="width:49%">Create New Profile</button></a>
+                                <h3 style="color:black">@ViewBag.SignInMessage</h3>
+                            </form>
+
+
                             <br>
-                            <a style="color:black ; font-family:'Felix Titling'"> Username :</a> <input  type="text"  name="Name" /><br>
-                            <a style ="color:black; font-family:'Felix Titling'">Password :</a> <input type="password" name="Password" /><br>
-                            <input type="submit" value="Login" />
-                            <a href="/Home/SignUp" > Sign Up </a> 
-                            <h3 style="color:black">@ViewBag.SignInMessage</h3>
-                        </form>
-                        <br>
 
-                            <!--   --------------------------------------------------------------------                     -->
-                      
-                             <!----------------------------------------------------------------------------------->
+                            <!--   --------------------------------------------------------------------     -->
+                            <!----------------------------------------------------------------------------------->
 
-</div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+        </section>
 </body>
 </html>
