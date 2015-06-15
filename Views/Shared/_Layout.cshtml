@@ -34,7 +34,8 @@
                 <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Store", "Store", "Home")</li>
                 <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Contact", "Contact", "Home")</li>
                 <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Wish List", "WishList", "Home")</li>
-                @*<li style="scrollbar-face-color:gold; font-family: 'Felix Titling'; font-size: large">@Html.ActionLink("LogIn", "Login", "Home")</li>
+                <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Admin", "Admin", "Home")</li>
+    @*<li style="scrollbar-face-color:gold; font-family: 'Felix Titling'; font-size: large">@Html.ActionLink("LogIn", "Login", "Home")</li>
                 <li style="scrollbar-face-color:gold; font-family: 'Felix Titling'; font-size: large">@Html.ActionLink("Sign up", "SignUp", "Home")</li>*@
                 
                 @if (Session["Name"] == null)
@@ -47,7 +48,7 @@
                 { if (Session["Name"] == "admin")
                       {
                         <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("LogOut", "Logout", "Home")</li>
-                        <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Login As: " +(string)@Session["Name"] , "Admin", "Home")</li>
+                        <li style="scrollbar-face-color: gold; font-family: 'Felix Titling'; font-size: large; text-shadow: initial">@Html.ActionLink("Admin" , "Index", "Admin")</li>
                       }
                     else
                     {
